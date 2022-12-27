@@ -42,8 +42,8 @@ if($_POST) {
    ini_set("sendmail_from", $to); // for windows server
    $mail = mail($to, $subject, $message, $headers);
 
-	if ($mail) { echo "OK"; }
-   else { echo "Something went wrong. Please try again."; }
+	if ($mail) { echo "Votre message à été envoyé, MERCI !"; }
+   else { echo "Quelque chose s'est mal passé. Veuillez réessayer."; }
 
 }
 
